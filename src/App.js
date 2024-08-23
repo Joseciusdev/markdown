@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import MarkdownEditor from './components/MarkdownEditor/MarkdownEditor';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        Welcome to Markdown Editor
+      </h1>
+      <p>
+        Check the Reference to find relevant Text
+      </p>
+      <a href='https://www.markdownguide.org/basic-syntax/' target="_blank">Click</a>
+      <MarkdownEditor />
     </div>
   );
 }
